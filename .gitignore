@@ -1,0 +1,19 @@
+﻿# data (never commit)
+data/
+logs/
+*.log
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# env & secrets
+.env
+.env.*
+
+# os
+Thumbs.db
+.DS_Store

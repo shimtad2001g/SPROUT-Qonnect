@@ -1,0 +1,46 @@
+{
+  "synthetic_plot_count": 10,
+  "batch_code_simulated": "QON-SIM-COMMINGLE-001",
+  "results": [
+    {
+      "scenario": "full_batch",
+      "aggregation": {
+        "plot_count": 10,
+        "total_area_ha": 31.3328,
+        "aggregated_agb_t": 2174.5046,
+        "worst_case_risk_score": 0.493
+      },
+      "recomputed_consistent": true
+    },
+    {
+      "scenario": "remove_first_3",
+      "aggregation": {
+        "plot_count": 7,
+        "total_area_ha": 21.9322,
+        "aggregated_agb_t": 1599.862,
+        "worst_case_risk_score": 0.493
+      },
+      "recomputed_consistent": true
+    },
+    {
+      "scenario": "remove_last_5",
+      "aggregation": {
+        "plot_count": 5,
+        "total_area_ha": 15.6669,
+        "aggregated_agb_t": 964.1164,
+        "worst_case_risk_score": 0.345
+      },
+      "recomputed_consistent": true
+    },
+    {
+      "scenario": "remove_random_4",
+      "aggregation": {
+        "plot_count": 8,
+        "total_area_ha": 25.0656,
+        "aggregated_agb_t": 1569.1961,
+        "worst_case_risk_score": 0.493
+      },
+      "recomputed_consistent": true
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "verdict": "INSUFFICIENT_DATA",
+  "classes_present": [
+    {
+      "class": "agroforestry",
+      "n": 1,
+      "avg_agb_t_ha": 45.2
+    },
+    {
+      "class": "forest",
+      "n": 1,
+      "avg_agb_t_ha": 120.5
+    },
+    {
+      "class": "shrubland",
+      "n": 1,
+      "avg_agb_t_ha": 60.8
+    }
+  ],
+  "total_labelled_plots": 3,
+  "min_per_class_required": 30,
+  "min_per_class_observed": 1,
+  "deficit_per_class": 29,
+  "method_when_ready": [
+    "Stratified field survey: >=30 ground-truth points per class",
+    "Confusion matrix computed against SPROUT landcover prediction",
+    "Per-class precision and recall reported with 95% Wilson CI",
+    "Forest flag threshold tuned on shade-coffee plots specifically",
+    "Any plot with agroforestry landcover MUST return forest_flag=false"
+  ],
+  "next_action": "Defer calibration until field data collection; seed data is for pipeline verification only. Report to the consortium that calibration is PENDING, not complete."
+}

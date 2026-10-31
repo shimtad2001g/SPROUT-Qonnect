@@ -1,0 +1,33 @@
+SPROUT-Qonnect x TraceRight | Sequence Diagram
+================================================
+
+  Qonnect                SPROUT API                Batch Assembly          ECTMS/EU TRACES
+    |                       |                          |                        |
+    |--farm + polygon------>|                          |                        |
+    |                       |--POST /v1/zone---------->|                        |
+    |                       |<--{zone, validation}-----|                        |
+    |                       |--POST /v1/landcover----->|                        |
+    |                       |<--{lc, forest_flag}------|                        |
+    |                       |--POST /v1/agb----------->|                        |
+    |                       |<--{agb, uncertainty}-----|                        |
+    |                       |--POST /v1/risk---------->|                        |
+    |                       |<--{risk}-----------------|                        |
+    |<--verified record-----|                          |                        |
+    |                       |                          |                        |
+    |  (repeat per plot)    |                          |                        |
+    |                       |                          |                        |
+    |--assemble batch--------------------------------->|                        |
+    |                       |                          |                        |
+    |                       |<-GET /v1/batch/{code}----|                        |
+    |                       |--batch summary---------->|                        |
+    |                       |                          |                        |
+    |                       |                          |--GeoJSON FeatureColl-->|
+    |                       |                          |<--ack / batch ID-------|
+    |                       |                          |                        |
+    |<--verification complete--------------------------|                        |
+
+Key properties demonstrated:
+  - Rejected plots remain in the batch as "rejected" -- no silent drops
+  - Batch verification_status is "partial" when any plot is rejected
+  - Every response carries model_version + computed_at (EUDR R7)
+  - ECTMS GeoJSON has 6-decimal coordinates (EUDR R2, enforced here at export)

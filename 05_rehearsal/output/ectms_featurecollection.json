@@ -1,0 +1,147 @@
+{
+  "type": "FeatureCollection",
+  "ectms_batch_id": null,
+  "batch_code": "QON-COF-2026-00001",
+  "verification_status": "partial",
+  "generated_at": "2026-10-31T10:35:47+00:00",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.550001,
+              5.999999
+            ],
+            [
+              37.551001,
+              5.999999
+            ],
+            [
+              37.551001,
+              6.001001
+            ],
+            [
+              37.550001,
+              6.001001
+            ],
+            [
+              37.550001,
+              5.999999
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "batch_id": "QON-COF-2026-00001",
+        "farm_id": "FRM-GAMO-0001",
+        "plot_id": "PLT-GAMO-0001",
+        "crop": "coffee",
+        "area_ha": 1.2,
+        "verification_status": "verified",
+        "model_version": "sprout-ssl-agb-v0.9",
+        "computed_at": "2026-10-31T10:35:47+00:00",
+        "sprout_zone": "Kolla",
+        "sprout_landcover": "agroforestry",
+        "sprout_forest_flag": false,
+        "sprout_agb_t_ha": 45.2,
+        "sprout_agb_uncertainty": 8.1,
+        "sprout_risk_score": 0.35
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.570001,
+              6.249999
+            ],
+            [
+              37.572001,
+              6.249999
+            ],
+            [
+              37.572001,
+              6.252001
+            ],
+            [
+              37.570001,
+              6.252001
+            ],
+            [
+              37.570001,
+              6.249999
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "batch_id": "QON-COF-2026-00001",
+        "farm_id": "FRM-GAMO-0002",
+        "plot_id": "PLT-GAMO-0002",
+        "crop": "coffee",
+        "area_ha": 5.0,
+        "verification_status": "verified",
+        "model_version": "sprout-ssl-agb-v0.9",
+        "computed_at": "2026-10-31T10:35:47+00:00",
+        "sprout_zone": "Weyna Dega",
+        "sprout_landcover": "forest",
+        "sprout_forest_flag": true,
+        "sprout_agb_t_ha": 120.5,
+        "sprout_agb_uncertainty": 15.3,
+        "sprout_risk_score": 0.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.600001,
+              6.399999
+            ],
+            [
+              37.601001,
+              6.399999
+            ],
+            [
+              37.601001,
+              6.401001
+            ],
+            [
+              37.600001,
+              6.401001
+            ],
+            [
+              37.600001,
+              6.399999
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "batch_id": "QON-COF-2026-00001",
+        "farm_id": "FRM-GAMO-0003",
+        "plot_id": "PLT-GAMO-0003",
+        "crop": "coffee",
+        "area_ha": 2.0,
+        "verification_status": "rejected",
+        "model_version": null,
+        "computed_at": null,
+        "rejection_reasons": [
+          {
+            "rule_id": "R5_area_plausible",
+            "message": "declared=2.000ha geodesic=1.226ha delta=38.7% (tolerance 5%)"
+          }
+        ]
+      }
+    }
+  ]
+}

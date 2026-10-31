@@ -1,0 +1,171 @@
+{
+  "input_file": "C:\\SPROUT-Qonnect\\05_rehearsal\\input\\qonnect_sample_batch.json",
+  "batch": {
+    "batch_code": "QON-COF-2026-00001",
+    "ectms_batch_id": null,
+    "plot_count_total": 3,
+    "plot_count_verified": 2,
+    "plot_count_rejected": 1,
+    "total_area_ha": 6.2,
+    "aggregated_agb_t": 656.74,
+    "worst_case_risk_score": 0.35,
+    "verification_status": "partial",
+    "batch_elapsed_ms": 102.27,
+    "avg_plot_ms": 34.09,
+    "model_version": "sprout-ssl-agb-v0.9",
+    "computed_at": "2026-10-31T10:35:47+00:00"
+  },
+  "plots": [
+    {
+      "plot_id": "PLT-GAMO-0001",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.550001,
+              5.999999
+            ],
+            [
+              37.551001,
+              5.999999
+            ],
+            [
+              37.551001,
+              6.001001
+            ],
+            [
+              37.550001,
+              6.001001
+            ],
+            [
+              37.550001,
+              5.999999
+            ]
+          ]
+        ]
+      },
+      "declared_area_ha": 1.2,
+      "status": "verified",
+      "attributes": {
+        "sprout_zone": "Kolla",
+        "sprout_landcover": "agroforestry",
+        "sprout_forest_flag": false,
+        "sprout_agb_t_ha": 45.2,
+        "sprout_agb_uncertainty": 8.1,
+        "sprout_risk_score": 0.35
+      },
+      "timings_ms": {
+        "zone": 25.59,
+        "landcover": 11.83,
+        "agb": 11.91,
+        "risk": 9.29
+      },
+      "errors": [],
+      "model_version": "sprout-ssl-agb-v0.9",
+      "computed_at": "2026-10-31T10:35:47+00:00",
+      "farm_id": "FRM-GAMO-0001",
+      "crop": "coffee",
+      "batch_code": "QON-COF-2026-00001"
+    },
+    {
+      "plot_id": "PLT-GAMO-0002",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.570001,
+              6.249999
+            ],
+            [
+              37.572001,
+              6.249999
+            ],
+            [
+              37.572001,
+              6.252001
+            ],
+            [
+              37.570001,
+              6.252001
+            ],
+            [
+              37.570001,
+              6.249999
+            ]
+          ]
+        ]
+      },
+      "declared_area_ha": 5.0,
+      "status": "verified",
+      "attributes": {
+        "sprout_zone": "Weyna Dega",
+        "sprout_landcover": "forest",
+        "sprout_forest_flag": true,
+        "sprout_agb_t_ha": 120.5,
+        "sprout_agb_uncertainty": 15.3,
+        "sprout_risk_score": 0.1
+      },
+      "timings_ms": {
+        "zone": 8.48,
+        "landcover": 9.37,
+        "agb": 9.24,
+        "risk": 8.77
+      },
+      "errors": [],
+      "model_version": "sprout-ssl-agb-v0.9",
+      "computed_at": "2026-10-31T10:35:47+00:00",
+      "farm_id": "FRM-GAMO-0002",
+      "crop": "coffee",
+      "batch_code": "QON-COF-2026-00001"
+    },
+    {
+      "plot_id": "PLT-GAMO-0003",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.600001,
+              6.399999
+            ],
+            [
+              37.601001,
+              6.399999
+            ],
+            [
+              37.601001,
+              6.401001
+            ],
+            [
+              37.600001,
+              6.401001
+            ],
+            [
+              37.600001,
+              6.399999
+            ]
+          ]
+        ]
+      },
+      "declared_area_ha": 2.0,
+      "status": "rejected",
+      "attributes": {},
+      "timings_ms": {
+        "zone": 7.51
+      },
+      "errors": [
+        {
+          "rule_id": "R5_area_plausible",
+          "message": "declared=2.000ha geodesic=1.226ha delta=38.7% (tolerance 5%)"
+        }
+      ],
+      "model_version": null,
+      "computed_at": null,
+      "farm_id": "FRM-GAMO-0003",
+      "crop": "coffee",
+      "batch_code": "QON-COF-2026-00001"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "source": "qonnect",
+  "export_date": "2026-10-31",
+  "format_version": "0.1",
+  "farms": [
+    {
+      "farm_id": "FRM-GAMO-0001",
+      "zone": "Gamo Gofa",
+      "woreda": "Mirab Abaya",
+      "crop": "coffee",
+      "batch_code": "QON-COF-2026-00001",
+      "plots": [
+        {
+          "plot_id": "PLT-GAMO-0001",
+          "area_ha": 1.2,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [37.550001, 5.999999],
+              [37.551001, 5.999999],
+              [37.551001, 6.001001],
+              [37.550001, 6.001001],
+              [37.550001, 5.999999]
+            ]]
+          }
+        }
+      ]
+    },
+    {
+      "farm_id": "FRM-GAMO-0002",
+      "zone": "Gamo Gofa",
+      "woreda": "Arba Minch Zuria",
+      "crop": "coffee",
+      "batch_code": "QON-COF-2026-00001",
+      "plots": [
+        {
+          "plot_id": "PLT-GAMO-0002",
+          "area_ha": 5.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [37.570001, 6.249999],
+              [37.572001, 6.249999],
+              [37.572001, 6.252001],
+              [37.570001, 6.252001],
+              [37.570001, 6.249999]
+            ]]
+          }
+        }
+      ]
+    },
+    {
+      "farm_id": "FRM-GAMO-0003",
+      "zone": "Gamo Gofa",
+      "woreda": "Kucha",
+      "crop": "coffee",
+      "batch_code": "QON-COF-2026-00001",
+      "plots": [
+        {
+          "plot_id": "PLT-GAMO-0003",
+          "area_ha": 2.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [37.600001, 6.399999],
+              [37.601001, 6.399999],
+              [37.601001, 6.401001],
+              [37.600001, 6.401001],
+              [37.600001, 6.399999]
+            ]]
+          }
+        }
+      ]
+    }
+  ]
+}

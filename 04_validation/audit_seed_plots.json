@@ -1,0 +1,43 @@
+[
+  {
+    "plot_id": "PLT-GAMO-0001",
+    "geometry_type": "Polygon",
+    "declared_area_ha": 1.2,
+    "rules_passed": [
+      "R4_validity",
+      "R4_ring_closed",
+      "R4_ccw",
+      "R5_area_plausible"
+    ],
+    "rules_failed": []
+  },
+  {
+    "plot_id": "PLT-GAMO-0002",
+    "geometry_type": "Polygon",
+    "declared_area_ha": 5.0,
+    "rules_passed": [
+      "R4_validity",
+      "R4_ring_closed",
+      "R4_ccw",
+      "R5_area_plausible"
+    ],
+    "rules_failed": []
+  },
+  {
+    "plot_id": "PLT-GAMO-0003",
+    "geometry_type": "Polygon",
+    "declared_area_ha": 2.0,
+    "rules_passed": [
+      "R4_validity",
+      "R4_ring_closed",
+      "R4_ccw"
+    ],
+    "rules_failed": [
+      {
+        "rule_id": "R5_area_plausible",
+        "message": "declared=2.000ha geodesic=1.226ha delta=38.7% (tolerance 5%)",
+        "geodesic_area_ha": 1.2259
+      }
+    ]
+  }
+]

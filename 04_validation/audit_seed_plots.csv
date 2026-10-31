@@ -1,0 +1,4 @@
+plot_id,declared_area_ha,rules_passed_count,rules_failed_count,rules_failed,verdict
+PLT-GAMO-0001,1.2,4,0,,PASS
+PLT-GAMO-0002,5.0,4,0,,PASS
+PLT-GAMO-0003,2.0,3,1,R5_area_plausible,FAIL

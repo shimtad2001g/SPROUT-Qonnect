@@ -1,0 +1,11 @@
+SPROUT-Qonnect - toolchain snapshot
+Captured : 2026-10-31 13:08:11 +03:00
+Host     : DESKTOP-MTOPGKE / SHIMELES_TADESSE
+PowerShell: 5.1.19041.5965
+Python    : Python 3.11.15
+Python exe: C:\Users\SHIMELES_TADESSE\.conda\envs\geospatial_auditor\python.exe
+GDAL      : GDAL 3.12.3 "Chicoutimi", released 2026/03/17
+ogr2ogr   : GDAL 3.12.3 "Chicoutimi", released 2026/03/17
+Git       : git version 2.55.0.windows.2
+Docker cli: Docker version 28.3.2, build 578ccf6
+Docker srv:  error during connect: Get "http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/info": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
