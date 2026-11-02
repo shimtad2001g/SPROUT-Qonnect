@@ -17,3 +17,6 @@ venv/
 # os
 Thumbs.db
 .DS_Store
+
+# Streamlit agent skills
+.agents/
