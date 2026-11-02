@@ -80,6 +80,7 @@ if r.status_code == 200:
     check('batch plot_count=3', d.get('plot_count') == 3)
     check('batch has 3 plots', len(d.get('plots', [])) == 3)
     check('batch area=8.20', abs(d.get('total_area_ha', 0) - 8.20) < 0.001)
+    check('batch has fabric_hash', len(d.get('fabric_hash', '')) == 64)
 
 # --- negative: unknown batch ---
 r = client.get('/v1/batch/BOGUS-CODE')

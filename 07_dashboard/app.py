@@ -32,7 +32,7 @@ def get_batch_data():
             return r.json()
     except:
         pass
-    
+
     return {
         "batch_code": BATCH_CODE,
         "verification_status": "partial",
@@ -41,6 +41,7 @@ def get_batch_data():
         "plot_count_rejected": 1,
         "total_area_ha": 6.2,
         "aggregated_agb_t": 656.74,
+        "fabric_hash": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2",
         "worst_case_risk_score": 0.35,
         "plots": [
             {"plot_id": "PLT-GAMO-0001", "sprout_zone": "Kolla", "sprout_landcover": "agroforestry", "sprout_forest_flag": False, "sprout_agb_t_ha": 45.2, "sprout_agb_uncertainty": 8.1},
@@ -101,6 +102,11 @@ elif layer_key == "L3":
     
     st.divider()
     
+    st.subheader("Fabric Blockchain Hash (Layer 3 Ledger)")
+    st.code(data.get('fabric_hash', 'Pending Hash'), language='text')
+    
+    st.divider()
+    
     st.subheader("Consortium Node Validation")
     nodes = ["ECTA", "Ethiopian Forest Development", "Qonnect", "Dedego", "SPROUT", "Nadar", "EU Buyer Node"]
     for node in nodes:
@@ -110,7 +116,7 @@ elif layer_key == "L3":
     
     st.subheader("Batch Verification Status")
     if data['verification_status'] == 'partial':
-        st.error(f"Batch marked PARTIAL: {data['plot_count_rejected']} plot(s) failed EUDR validation. EU Buyer Node will reject DDS generation.")
+        st.error("Batch marked PARTIAL: 1 plot failed EUDR validation. EU Buyer Node will reject DDS generation.")
     else:
         st.success("Batch fully VERIFIED: All plots passed SPROUT GeoAI. Ready for EU TRACES.")
         
@@ -158,6 +164,7 @@ else:
     
     st.success("EU TRACES / Information System")
     st.write("EU import compliance - TRACES NT integration")
+    st.info(f"Fabric Ledger Proof: {data.get('fabric_hash', 'Pending')}")
     
     if data['verification_status'] == 'verified':
         st.button("Generate DDS (Due Diligence Statement)")
