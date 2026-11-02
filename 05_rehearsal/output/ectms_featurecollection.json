@@ -3,7 +3,7 @@
   "ectms_batch_id": null,
   "batch_code": "QON-COF-2026-00001",
   "verification_status": "partial",
-  "generated_at": "2026-10-31T10:35:47+00:00",
+  "generated_at": "2026-11-02T04:23:55+00:00",
   "features": [
     {
       "type": "Feature",
@@ -42,7 +42,7 @@
         "area_ha": 1.2,
         "verification_status": "verified",
         "model_version": "sprout-ssl-agb-v0.9",
-        "computed_at": "2026-10-31T10:35:47+00:00",
+        "computed_at": "2026-11-02T04:23:55+00:00",
         "sprout_zone": "Kolla",
         "sprout_landcover": "agroforestry",
         "sprout_forest_flag": false,
@@ -88,7 +88,7 @@
         "area_ha": 5.0,
         "verification_status": "verified",
         "model_version": "sprout-ssl-agb-v0.9",
-        "computed_at": "2026-10-31T10:35:47+00:00",
+        "computed_at": "2026-11-02T04:23:55+00:00",
         "sprout_zone": "Weyna Dega",
         "sprout_landcover": "forest",
         "sprout_forest_flag": true,

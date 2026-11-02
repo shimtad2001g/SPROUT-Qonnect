@@ -9,7 +9,7 @@
        cd C:\SPROUT-Qonnect\05_rehearsal\scripts
        python demo.py
 4. Confirm the output shows:
-   - "agb=45.2 +/- 8.1"  (not "A+-8.1" or a mojibake string)
+   - "agb=45.2 +/- 8.1"  (not "Â±" — mojibake from the pre-fix version)
    - One R5_area_plausible line for PLT-GAMO-0003 (not four)
    - PLT-GAMO-0003 total_ms under ~15ms (short-circuit active)
 5. If any of those three are wrong, re-run step7a_fixes.ps1 - do not proceed.

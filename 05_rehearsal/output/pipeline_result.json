@@ -10,10 +10,10 @@
     "aggregated_agb_t": 656.74,
     "worst_case_risk_score": 0.35,
     "verification_status": "partial",
-    "batch_elapsed_ms": 102.27,
-    "avg_plot_ms": 34.09,
+    "batch_elapsed_ms": 106.87,
+    "avg_plot_ms": 35.62,
     "model_version": "sprout-ssl-agb-v0.9",
-    "computed_at": "2026-10-31T10:35:47+00:00"
+    "computed_at": "2026-11-02T04:23:55+00:00"
   },
   "plots": [
     {
@@ -56,14 +56,14 @@
         "sprout_risk_score": 0.35
       },
       "timings_ms": {
-        "zone": 25.59,
-        "landcover": 11.83,
-        "agb": 11.91,
-        "risk": 9.29
+        "zone": 27.71,
+        "landcover": 12.06,
+        "agb": 11.97,
+        "risk": 9.83
       },
       "errors": [],
       "model_version": "sprout-ssl-agb-v0.9",
-      "computed_at": "2026-10-31T10:35:47+00:00",
+      "computed_at": "2026-11-02T04:23:55+00:00",
       "farm_id": "FRM-GAMO-0001",
       "crop": "coffee",
       "batch_code": "QON-COF-2026-00001"
@@ -108,14 +108,14 @@
         "sprout_risk_score": 0.1
       },
       "timings_ms": {
-        "zone": 8.48,
-        "landcover": 9.37,
-        "agb": 9.24,
-        "risk": 8.77
+        "zone": 9.41,
+        "landcover": 10.34,
+        "agb": 9.35,
+        "risk": 8.49
       },
       "errors": [],
       "model_version": "sprout-ssl-agb-v0.9",
-      "computed_at": "2026-10-31T10:35:47+00:00",
+      "computed_at": "2026-11-02T04:23:55+00:00",
       "farm_id": "FRM-GAMO-0002",
       "crop": "coffee",
       "batch_code": "QON-COF-2026-00001"
@@ -153,7 +153,7 @@
       "status": "rejected",
       "attributes": {},
       "timings_ms": {
-        "zone": 7.51
+        "zone": 7.38
       },
       "errors": [
         {
