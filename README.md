@@ -17,3 +17,6 @@ agricultural traceability platform.
 
 ## Status
 See 00_admin/STEP_TRACKER.md
+
+## Live Demo
+[View the Live TraceRight Dashboard](https://sprout-qonnect-clnhwfubq2y6y9bafzg.streamlit.app/)
